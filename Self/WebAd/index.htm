@@ -1,0 +1,269 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<title>Drcom上网登录窗</title>
+		<script language="JavaScript"><!--
+
+function openwin(){
+
+if((form1.DDDDD.value=="")||(form1.upass.value==""))
+	{window.location.href='http://202.205.88.55:8080/Self/'}
+else
+	{ul="http://192.168.0.254:8080/Self/LoginFromGatewayAction?userName="+form1.DDDDD.value+"&password="+form1.upass.value;
+		window.open(ul);
+		return false;}
+}
+--></script>
+
+		<style>
+<!--
+a {
+	text-decoration: none
+}
+
+body {
+	text-align: center;
+	background-color: #EFF9FE;
+}
+
+.f1 {
+	font-size: 8pt;
+	font-family: Verdana;
+	line-height: 14pt;
+	color: #5F6468
+}
+
+.f2 {
+	font-size: 9pt;
+	font-family: Verdana;
+	line-height: 14pt;
+	color: #5A7E98
+}
+
+.input-border {
+	border: 1px solid #b8b8b8;
+	width: 168px;
+	line-height: 20px;
+	font-size: 14px;
+	height: 22px;
+}
+
+.con {
+	width: 800px;
+	height: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+.login {
+	background-image: url('a13.jpg');
+	background-repeat: no-repeat;
+	float: left;
+	height: 450px;
+	width: 800px
+}
+
+.login .b_left {
+	float: left;
+	height: 450px;
+	width: 400px
+}
+
+.login .b_cernet {
+	float: left;
+	height: 450px;
+	width: 336px;
+}
+
+.login .b_right {
+	float: left;
+	height: 450px;
+	width: 64px;
+}
+
+.login-b,.login-b2,.login-b3 {
+	background-image: url('a04.gif');
+	height: 26px;
+	width: 77px;
+	border: 0 none;
+	cursor: hand !important
+}
+
+.login-b2 {
+	background-image: url('a04.gif');
+	background-position: 0px -27px
+}
+
+.login-b3 {
+	background-image: url('a04.gif');
+	background-position: 0px -54px
+}
+
+.login-a,.login-a2,.login-a3 {
+	background-image: url('a12.gif');
+	height: 26px;
+	width: 77px;
+	border: 0 none;
+	cursor: hand !important
+}
+
+.login-a2 {
+	background-image: url('a12.gif');
+	background-position: 0px -27px
+}
+
+.login-a3 {
+	background-image: url('a12.gif');
+	background-position: 0px -54px
+}
+-->
+</style>
+	</head>
+
+	<body onselectstart="return false">
+		<div class="con">
+			<div class="login">
+				<div class="b_left">
+					<table border="0" width="100%" cellspacing="0" cellpadding="0"
+						height="407">
+						<tr>
+							<td height="45" width="63">
+							</td>
+							<td height="45">
+							</td>
+							<td height="45" width="32">
+							</td>
+						</tr>
+						<tr>
+							<td width="63" height="349" rowspan="3">
+							</td>
+							<td height="117" valign="top">
+								<p>
+									<p>
+										<iframe name="I1" width="292" height="163" frameborder="0"
+											src="notice.htm" marginwidth="1" marginheight="1"
+											allowtransparency="yes" target="_blank" scrolling="no"></iframe>
+							</td>
+							<td width="32" height="349" rowspan="3">
+							</td>
+						</tr>
+						<tr>
+							<td height="50" valign="top">
+							</td>
+						</tr>
+						<tr>
+							<td height="188" valign="top">
+
+
+								<iframe name="I2" width="292" height="163" frameborder="0"
+									src="helpIndex.htm" marginwidth="1" marginheight="1"
+									allowtransparency="yes" target="_blank"></iframe>
+
+							</td>
+						</tr>
+						<tr>
+							<td width="63">
+							</td>
+							<td>
+								<p align="center" class="f2">
+									本宽带接入服务器由
+									<a target="_blank" href="http://www.doctorcom.com"><font
+										color="#5A7E98">城市热点</font>
+									</a>提供.
+							</td>
+							<td width="32">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="b_cernet" style="width: 325px; height: 450px">
+					<form name=form1 method=post action="/">
+						<table border="0" width="100%" cellspacing="1" cellpadding="0"
+							height="100%" class="f1">
+							<tr>
+								<td height="75" colspan="2">
+								</td>
+							</tr>
+							<tr>
+								<td height="17" colspan="2"></td>
+							</tr>
+							<tr>
+								<td height="66" colspan="2">
+									<p align="center">
+										<img border="0" src="a02.gif">
+								</td>
+							</tr>
+							<tr>
+								<td height="5" colspan="2"></td>
+							</tr>
+							<tr>
+								<td height="30" width="99%" align="right" colspan="2">
+									<p align="center">
+										<b><font color="#CC0000" style="font-size: 10.5pt">请再次输入用户名及密码，并登录</font>
+										</b>
+								</td>
+							</tr>
+							<tr>
+								<td height="32" width="35%" align="right">
+									用户名 Account
+								</td>
+								<td height="32" width="64%">
+									&nbsp;
+									<input name="DDDDD" type="text" maxlength="26"
+										class="input-border">
+									&nbsp;
+								</td>
+							</tr>
+							<tr>
+								<td height="32" width="35%">
+									<p align="right">
+										密码 Password
+								</td>
+								<td height="32" width="64%">
+									&nbsp;
+									<input name="upass" type="password" maxlength="16"
+										class="input-border">
+								</td>
+							</tr>
+							<tr>
+								<td height="41">
+								</td>
+								<td height="41">
+									&nbsp;
+									<input type="submit" name="0MKKey" value="" class="login-b"
+										onMouseOver="this.className='login-b2'"
+										onMouseDown="this.className='login-b3'"
+										onMouseOut="this.className='login-b'" />
+									&nbsp;&nbsp;
+									<input type="button" onClick="openwin()" class="login-a"
+										onMouseOver="this.className='login-a2'"
+										onMouseDown="this.className='login-a3'"
+										onMouseOut="this.className='login-a'" />
+								</td>
+							</tr>
+							<tr>
+								<td height="118" colspan="2" align="center">
+
+
+									<iframe name="I3" width="311" height="96" frameborder="0"
+										src="a51.htm" marginwidth="1" marginheight="1"
+										allowtransparency="yes" target="_blank" scrolling="no"></iframe>
+
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" colspan="2">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="b_right" style="width: 69px; height: 450px">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

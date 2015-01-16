@@ -1,0 +1,39 @@
+﻿@charset "utf-8";
+
+/*---------------表格宽度和字体-----*/
+.table1,.table2,.table3,.table4,.table5 {
+	font-size: 12px;
+	font-family: 宋体, Tahoma;
+	width: 100%;
+}
+
+/*---------------表格与字符的间距-----*/
+.table1 td,.table2 td,.table3 td,.table4 td,.table5 td {
+	padding: 4px;
+}
+
+/*---------------左对齐或右对齐-----*/
+.t_l {
+	text-align: left;
+}
+
+.t_r {
+	text-align: right;
+}
+
+/*---------------表头背景色-----*/
+.table4 th {
+	padding: 4px;
+	background-color: #BCE27F;
+}
+
+/*---------------单元格线条颜色-----*/
+.table2,.table4 {
+	border-top: 1px solid #B3CFC5;
+	border-left: 1px solid #B3CFC5;
+}
+
+.table2 td,.table4 td {
+	border-right: 1px solid #B3CFC5;
+	border-bottom: 1px solid #B3CFC5;
+}

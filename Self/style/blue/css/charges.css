@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* CSS Document */ /*-------------资费介绍----- ---------*/
+.profile {
+	width: 100%;
+	border-top: solid 1px #AEC3D6;
+	border-left: solid 1px #AEC3D6;
+}
+
+.tableheader {
+	background: /*url(images/banner.gif)*/ #A5E5FB repeat-x left center;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-weight: BOLD;
+	color: #003a51;
+}
+
+.profile td,.profile th {
+	padding: 5px;
+	border-right: solid 1px #AEC3D6;
+	border-bottom: solid 1px #AEC3D6;
+}
+
+.profile .tr2 {
+	background-color: #FFFFFF;
+}

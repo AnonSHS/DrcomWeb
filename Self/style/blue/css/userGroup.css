@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/********* 资费介绍 **********/
+.tarifftitle {
+	text-align: center;
+}
+
+.tarifftable {
+	width: 580px;
+	border: solid 1px #B3CFC5;
+}
+
+.tarifftable td {
+	height: 22px;
+	border-bottom: solid 1px #B3CFC5;
+}
+
+.headbanner td {
+	background: url(../images/banner.gif) repeat-x left center;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-weight: BOLD;
+	color: #003a51;
+	padding-left: 10px;
+}
+
+.secondbanner {
+	background-color: #DCE9E3;
+	font-weight: BOLD;
+	text-align: center;
+}
+
+.tarifftable .t_l {
+	width: 20%;
+	border-right: solid 1px #B3CFC5;
+	padding: 0px 5px 0px 5px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.tarifftable .t_r {
+	width: 40%;
+	padding: 0px 5px 0px 5px;
+	text-align: left;
+	line-height: 20px;
+}

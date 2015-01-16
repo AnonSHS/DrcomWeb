@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+/* CSS Document */ /*  #############   通用   ###############  */
+html,body {
+	background: URL(../images/bg.gif) #e4e4e4 repeat-x;
+	font-size: 12px;
+	margin: 0px;
+	height: 100%;
+}
+
+.body2 {
+	background: URL(../images/top_bg.jpg) no-repeat;
+	height: 100%;
+}
+
+div {
+	font-size: 12px;
+}
+
+.outbox {
+	width: 980px;
+	margin: 0px auto;
+}
+
+.redtext {
+	color: #FF5900;
+}
+
+.greentext {
+	color: #017762;
+}
+
+.smalltext {
+	color: #666666;
+}
+
+.colortext {
+	color: #003a51;
+}
+
+.urltext a {
+	color: #0167B2;
+	text-decoration: none;
+}
+
+.urltext a:hover {
+	color: #0167B2;
+	text-decoration: underline;
+}
+
+a {
+	color: #0167B2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0167B2;
+	text-decoration: underline;
+}
+
+.centerbut { /*居中按钮*/
+	margin-top: 10px;
+	text-align: center;
+}
+
+.but { /* 2个字黄色按钮 */
+	background: url(../images/but2.gif) no-repeat 0 0;
+	border: none;
+	font-family: 宋体, Arial;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	text-transform: none;
+	width: 61px;
+	height: 26px;
+	cursor: pointer;
+}
+
+.tabcontent { /*内表格宽度*/
+	width: 580px;
+	margin: 20px auto;
+}
+
+.tabcontent li {
+	list-style-type: none;
+}
+
+.titlebanner { /*表头栏*/
+	background: url(../images/banner.gif) repeat-x left center;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-weight: BOLD;
+	color: #003a51;
+	padding-left: 10px;
+	border-style: solid solid none;
+	border-color: #AEC3D6;
+	border-width: 1px;
+}
+
+/*  #############   页头   ###############  */
+.header {
+	height: 90px;
+	position: relative;
+}
+
+.skin {
+	position: absolute;
+	right: -3px;
+	bottom: 5px;
+}
+
+/*  #############   内容   ###############  */
+.content_bg {
+	background-color: #F1F1F1; /*内容边框色*/
+	overflow: auto;
+	box-shadow: 2px 2px 2px #699553;
+	/* For Firefox & Webkit */
+	-moz-box-shadow: 2px 2px 2px #699553;
+	-webkit-box-shadow: 2px 2px 2px #699553;
+	/* For IE 5.5 - 7 */
+	filter: progid : DXImageTransform.Microsoft.Shadow ( Strength = 3,
+		Direction = 120, Color = '#699553' );
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=120, Color='#699553')"
+		;
+	position: relative;
+	zoom: 1; /*2011-11-11修改*/
+}
+
+.content_top {
+	background: url() no-repeat 0 top; /*中间底色上半部*/
+}
+
+.content_bom {
+	background: url() no-repeat left bottom; /*中间底色下半部*/
+}
+
+/*  #############   左栏   ###############  */
+.leftbox {
+	float: left;
+	width: 200px;
+	margin: 10px 7px 10px 10px;
+	display: inline; /*2011-11-11*/
+}
+
+/*帐户信息*/
+.info_bg {
+	background: url(../images/info_bg.gif) repeat-y 0 0;
+}
+
+.info_top {
+	background: url(../images/info_top.gif) no-repeat 0 0;
+	padding-top: 5px;
+}
+
+.info_bom {
+	background: url(../images/info_bom.gif) no-repeat 0 bottom;
+	/*padding-bottom:5px;2011-11-11清除*/
+	text-align: center;
+}
+
+.info_title {
+	height: 35px;
+	line-height: 35px;
+	color: #032f3d;
+	font-size: 13px;
+	font-weight: BOLD;
+}
+
+.info_text {
+	margin: 5px 10px 10px 10px;
+	text-align: left;
+	color: #194555;
+	line-height: 21px;
+}
+
+.info_bom .button { /* button */
+	background: url(../images/quit.gif) no-repeat 0 0;
+	border: none;
+	color: #000;
+	font-family: 宋体, Arial;
+	line-height: 16px; 
+	margin: 4px 0px 3px 0px;
+	padding: 4px 0px 10px 0px; 
+	text-align: center;
+	text-transform: none;
+	width: 61px; 
+	cursor: pointer;	
+}
+
+/*导航*/
+.leftmenu_bg {
+	background: url(../images/leftmenu_bg.gif) repeat-y 0 0;
+	margin-top: 10px;
+}
+
+.leftmenu_top {
+	background: url(../images/leftmenu_top.gif) no-repeat 0 0;
+	padding-top: 7px;
+}
+
+.leftmenu_bom {
+	background: url(../images/leftmenu_bom.gif) no-repeat 0 bottom;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.menu {
+	margin: 0 5px 0 -6px; /*2011-11-11修改*/
+	padding: 0px;
+	position: relative;
+	zoom: 1; /*2011-11-11修改*/
+}
+
+.menu li {
+	list-style-type: none;
+	height: 33px;
+	font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.menu a {
+	background: url() no-repeat;
+	display: block;
+	width: 200px;
+	height: 32px;
+	line-height: 28px;
+	text-decoration: none;
+	color: #FFF; /*导航字体色*/
+}
+
+.menu a:hover {
+	background: url(../images/leftmenu_sel.gif) no-repeat;
+	font-weight: bold;
+	color: #000000;
+}
+
+.now, .now a {
+	background: url(../images/leftmenu_sel.gif) no-repeat;
+	display: block;
+	width: 200px;
+	height: 32px;
+	line-height: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*  #############   右栏   ###############  */
+.rightbox {
+	float: left;
+	/*left:207px;2011-11-11*/
+	width: 756px;
+}
+
+/*  #############   首页模块  ###############  */
+.t_boxout {
+	background: #e0e0e0;
+	padding: 3px;
+	margin-top: 7px;
+}
+
+.banner_bg { /* 当前页背景 */
+	clear: both;
+	background: url(../images/banner_bg.gif) repeat-x 0 0;
+	padding: 0px;
+	position: relative;
+	zoom: 1; /*2011-11-15修改*/
+}
+
+.text_background {
+	clear: both;
+	/*background:url(../images/textbro.jpg) repeat-x 0 0;2011-11-22修改*/
+	background: url(../images/inputbg.gif) #FFFFFF repeat-x top left;
+	border: 1px solid #818181;
+	padding: 0px;
+	font-size: 12px;
+	width: 160px;
+	height: 18px;
+	position: relative;
+	zoom: 1; /*2011-11-15修改*/
+}
+
+.text_background1{
+	clear:both;
+	/*background:url(../images/textbro.jpg) repeat-x 0 0;2011-11-22修改*/
+	background:url(../images/inputbg.gif) #FFFFFF repeat-x top left; 
+	border: 1px solid #818181;
+	padding:0px;
+	font-size:12px;
+	width:200px;
+	height:18px;
+	position:relative; zoom:1;/*2011-11-15修改*/
+	}
+.selecttext{
+	background:url(../images/inputbg.gif) #FFFFFF repeat-x top left; 
+	width:202px;
+}
+
+.banner_bg .banner_l {
+	background: url(../images/banner_l.gif) no-repeat 0 0;
+}
+
+.banner_bg .banner_r {
+	background: url(../images/banner_r.gif) no-repeat right 0;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.banner_bg .banner_r a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.banner_bg .banner_r a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.t_boxin { /* 首页模块内框 */
+	background-color: #ffffff; /*首页内框底色*/
+	border-left: solid 1px #8b9ba0;
+	border-right: solid 1px #8b9ba0;
+	border-bottom: solid 1px #8b9ba0;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+	position: relative;
+	zoom: 1; /*2011-11-11修改*/
+}
+
+.memobg {
+	margin: 20px 20px;
+}
+
+/*  #############   温馨提示  ###############  */
+.tips_bg {
+	background: url(../images/tips_bg.gif) repeat-y 0 0;
+	margin-top: 5px;
+}
+
+.tips_top {
+	background: url(../images/tips_top.gif) no-repeat 0 0;
+	padding-top: 5px;
+}
+
+.tips_bom {
+	background: url(../images/tips_bom.gif) no-repeat 0 bottom;
+	padding-bottom: 30px;
+}
+
+.tips_title {
+	margin-left: 13px;
+	height: 35px;
+	line-height: 35px;
+	color: #ef4b30;
+	font-size: 13px;
+	font-weight: BOLD;
+}
+
+.tips_text {
+	margin: 0 13px 2px 13px;
+	text-align: left;
+	color: #343535;
+	line-height: 21px;
+}
+
+/*  #############   中下   ###############  */
+.cenbom {
+	clear: both;
+}
+
+/*  #############   页脚   ###############  */
+.footer {
+	height: 35px;
+	text-align: center;
+	color: #003c53;
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+	line-height: 35px;
+	position: relative;
+	zoom: 1; /*2011-11-11修改*/
+}
+
+input.text {
+	display: inline;
+	border: 1px solid #818181;
+	font-size: 12px;
+	font-family: 宋体, Tahoma;
+	color: #333333;
+	width: 150px;
+	height: 16px;
+	padding: 2px 4px 2px 4px;
+	background: url(../images/inputbg.gif) #FFFFFF repeat-x top left;
+}
+
+.skin_boxout {
+	position: absolute;
+	background: #c8dae0;
+	margin-top: 7px;
+	display: none;
+	z-index: 1;
+}
+
+.skin_boxin { /* 首页模块内框 */
+	background-color: #F9F9F9;
+	border: solid 1px #c0c8ca;
+	height: auto;
+	overflow: hidden;
+}
+
+.skin_context {
+	width: auto;
+}
+
+.skin_context img {
+	float: left;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.skin_img_general {
+	filter: alpha(opacity =   40);
+	-moz-opacity: 0.40;
+	opacity: 0.40;
+}
+
+.skin_img_mouseover {
+	filter: alpha(opacity =   100);
+	-moz-opacity: 1.00;
+	opacity: 1.00;
+}
+
+#currentSkin_icon {
+	position: absolute;
+	z-index: 2;
+}

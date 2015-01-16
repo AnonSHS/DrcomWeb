@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:URL() #3a9fbb no-repeat top center;
+	font-size:12px;
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+.l_outbox {
+	width:886px;
+	height:auto;
+	margin:0px auto; 
+}
+
+.top_space {
+	height:80px;
+
+}
+
+.l_logo {
+	background:URL(../images/logo/logo.jpg) no-repeat;
+	height:80px;
+	margin-left:95px;
+
+}
+
+.l_content {
+	margin:0px;
+	background:URL(../images/login.jpg) no-repeat left top;
+	height:376px;
+	border: 1px solid #3A9FBB;
+
+}
+
+.content {
+	margin:15px 20px 10px 68px;
+}
+
+.tabcontent {/*内表格宽度*/
+	float:left;
+	margin:30px 0 20px 0;
+	width:385px;
+	}
+	
+.row {
+	padding-bottom: 10px;
+	text-align:left;
+	}
+
+label {
+	width: 135px;
+	display: block;
+	float: left;
+	line-height:21px;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	color:#054e74;
+	}
+
+input.text {
+	display: inline;
+	border: 1px solid #818181;
+	font-size: 12px;
+	font-family:宋体, Tahoma;
+	color: #333333;
+	width:150px;
+	height: 16px;
+	/*padding: 2px 4px 2px 4px;*/
+	background:url(../images/inputbg.gif) #FFFFFF repeat-x top left; 
+	}
+
+input.code {
+	display: inline;
+	border: 1px solid #818181;
+	font-size: 12px;
+	font-family:宋体, Tahoma;
+	color: #333333;
+	width:30px;
+	height: 16px;
+	/*padding: 2px 4px 2px 4px;*/
+	background:url(../images/inputbg.gif) #FFFFFF repeat-x top left; 
+	}
+
+.but {/* 带英文黄色按钮 */
+	background:url(../images/l_but.gif) no-repeat 0 0;
+	border:none;  
+	font-family:宋体, Arial;
+	font-size:12px; 
+	text-align:center;
+	text-transform:none;
+	width:77px;  
+	height:26px;
+	color:#000;
+	}
+
+.redtext {
+	padding-bottom: 10px;
+	text-align:center;
+	color:#FF0000;
+}
+
+.rowtext {
+	line-height:16px;
+	font-size:12px;
+	color:#666;
+}
+
+.yellowtext, .yellowtext a {
+	line-height:16px;
+	font-size:12px;
+	color:yellow;
+	text-decoration:none;
+}
+
+.yellowtext a:hover {
+	line-height:16px;
+	font-size:12px;
+	color:yellow;
+	text-decoration:underline;
+}
+
+.s_text {
+	margin-top:60px;
+	color:#666;
+	text-align:center;
+}
+
+/*右边*/
+
+.rightann {
+	float:left;
+	width:375px;
+	height:180px;
+	overflow-y:auto;
+	margin:40px 0 20px 35px;
+	
+}
+
+.anntitle {
+	text-align:center;
+	height:30px;
+	font-weight:bold;
+	font-family:微软雅黑, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:30px;
+	color:#054e74;
+}
+
+.anntext {
+	color:#666;
+	line-height:21px;
+}

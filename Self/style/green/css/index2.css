@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.t_boxin {
+	background-color:#f9f9f9;
+}
+
+.iconlist {
+	display:inline-block;
+	*display: inline ;
+	width:100%;
+	margin:0;
+	overflow:hidden;
+	color:#777777;
+	}
+
+.iconinfo {
+	margin:10px;
+	width:165px;
+	height:120px;
+	float:left;
+	line-height:20px; 
+}
+
+.iconlist .bigfont a{
+	color:#003A51;
+	font-size:14px; 
+	font-weight:BOLD;
+	font-family:微软雅黑, Arial, Helvetica, sans-serif;
+	text-decoration : none ;
+	}
+

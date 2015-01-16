@@ -1,0 +1,6 @@
+﻿#找回密码邮件格式
+Smtp=smtp-ent.21cn.com
+MailAddress=test@doctorcom.com
+MailPassword=test
+MailSubject=宽带账号密码通知邮件
+MailBoay=尊敬的username：<br/>您账号account的宽带登录密码是password，请妥善保存及时修改。

@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****** 系统提示 ******/
+
+.errortext {
+	background:url(../images/systemtip.gif) #FFFFFF no-repeat 35px center;
+	border:solid 1px #AEC3D6; 
+	}
+
+.errortext .efont {
+	padding:60px 20px 60px 165px; 
+	text-align:left;
+	}
+	
+

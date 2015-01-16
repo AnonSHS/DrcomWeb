@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- Development Model -->
+	<constant name="struts.devMode" value="false"/>
+	
+	<!-- Automatic Configuration Reloading -->
+	<constant name="struts.convention.classes.reload" value="true" />
+	
+	<!-- Change Default Result Path -->
+	<constant name="struts.convention.result.path" value="/WEB-INF/page"></constant>
+	
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources"/> 
+	 
+	<package name="base" extends="struts-default" namespace="/">
+		<interceptors>
+			<interceptor name="loginCheck" class="com.selfpackage.util.LoginCheck"></interceptor>
+			<interceptor name="changeCheck" class="com.selfpackage.util.ChangeCheck"></interceptor>
+		</interceptors>
+		<default-interceptor-ref name="loginCheck"></default-interceptor-ref>
+		<global-results>
+			<result name="login">/</result>
+			<result name="tip" type="dispatcher">/WEB-INF/page/main/sysmsn.jsp</result>
+		</global-results>
+	</package>
+	
+</struts>

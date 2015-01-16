@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* CSS Document */ /*  #############   首页专区   ###############  */
+.iconmenu {
+	background: url(../images/iconmenu_bg.gif) no-repeat;
+	margin: 10px 0 0 10px;
+	float: left;
+	width: 359px;
+	height: 113px;
+	overflow: hidden;
+	text-align: left;
+	display:inline;/*2011-11-11*/
+}
+
+.boxspacing {
+	margin: 10px;
+}
+
+.iconmenu .info .fl {
+	float: left;
+}
+
+.iconmenu .info .fr {
+	width: 280px;
+	height: 45px;
+	padding: 0 0 10px 10px;
+	text-indent: 0;
+	overflow: hidden;
+	color: #777;
+	background: none;
+	display: block;
+}
+
+.iconmenu .info .fr b a {
+	display: block;
+	color: #003a51;
+	font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+.iconmenu ul {
+	clear: both;
+	width: 335px;
+	border-top: 1px dashed #737373;
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+
+.iconmenu ul li {
+	display: inline;
+	margin: 0 0 0 5px;
+	list-style-type: none;
+	line-height: 18px;
+	font-family: 宋体;
+}
+
+.iconmenu li a {
+	color: #30718f;
+	text-decoration: none;
+}
+
+.iconmenu li a:hover {
+	color: #0391c3;
+	text-decoration: underline;
+}

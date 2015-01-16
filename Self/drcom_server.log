@@ -1,0 +1,677 @@
+[2012-08-07 13:06:40:609] Root WebApplicationContext: initialization started
+[2012-08-07 13:06:40:734] Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1e3888a: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:06:40 CST 2012]; root of context hierarchy
+[2012-08-07 13:06:40:906] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/applicationContext.xml]
+[2012-08-07 13:06:42:562] Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1e3888a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1714f4a
+[2012-08-07 13:06:43:265] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1714f4a: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:06:43:546] Hibernate Annotations 3.3.0.GA
+[2012-08-07 13:06:43:578] Hibernate 3.2.5
+[2012-08-07 13:06:43:578] hibernate.properties not found
+[2012-08-07 13:06:43:578] Bytecode provider name : cglib
+[2012-08-07 13:06:43:609] using JDK 1.4 java.sql.Timestamp handling
+[2012-08-07 13:06:43:796] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 13:06:44:093] Configured SessionFactory: null
+[2012-08-07 13:06:44:218] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 13:06:44:312] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 13:06:44:468] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 13:06:44:468] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 13:06:44:468] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 13:06:44:468] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 13:06:44:484] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 13:06:44:484] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 13:06:44:484] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 13:06:44:484] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 13:06:44:500] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 13:06:44:500] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 13:06:44:500] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 13:06:44:500] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 13:06:44:500] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 13:06:44:500] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 13:06:44:515] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 13:06:44:515] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 13:06:44:578] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 13:06:44:578] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 13:06:44:578] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 13:06:44:578] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 13:06:44:578] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 13:06:44:578] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 13:06:44:578] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 13:06:44:578] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 13:06:44:578] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 13:06:44:578] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 13:06:44:593] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 13:06:44:593] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 13:06:44:593] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 13:06:44:593] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 13:06:44:593] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 13:06:44:593] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 13:06:44:593] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 13:06:44:593] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 13:06:44:640] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 13:06:44:640] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 13:06:44:968] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 13:06:44:984] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 13:06:45:000] Hibernate Validator 3.0.0.GA
+[2012-08-07 13:06:45:046] Building new Hibernate SessionFactory
+[2012-08-07 13:06:45:187] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 13:06:45:187] Hibernate connection pool size: 20
+[2012-08-07 13:06:45:187] autocommit mode: true
+[2012-08-07 13:06:45:187] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.32.181:1521:test3
+[2012-08-07 13:06:45:187] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 13:06:45:703] RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+[2012-08-07 13:06:45:703] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 13:06:45:765] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 13:06:45:765] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 13:06:45:781] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 13:06:45:781] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 13:06:45:781] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 13:06:45:781] Automatic session close at end of transaction: disabled
+[2012-08-07 13:06:45:781] JDBC batch size: 15
+[2012-08-07 13:06:45:781] JDBC batch updates for versioned data: disabled
+[2012-08-07 13:06:45:781] Scrollable result sets: enabled
+[2012-08-07 13:06:45:781] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 13:06:45:781] Connection release mode: auto
+[2012-08-07 13:06:45:781] Default batch fetch size: 1
+[2012-08-07 13:06:45:781] Generate SQL with comments: disabled
+[2012-08-07 13:06:45:781] Order SQL updates by primary key: disabled
+[2012-08-07 13:06:45:781] Order SQL inserts for batching: disabled
+[2012-08-07 13:06:45:781] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 13:06:45:796] Using ASTQueryTranslatorFactory
+[2012-08-07 13:06:45:796] Query language substitutions: {}
+[2012-08-07 13:06:45:796] JPA-QL strict compliance: disabled
+[2012-08-07 13:06:45:796] Second-level cache: enabled
+[2012-08-07 13:06:45:796] Query cache: disabled
+[2012-08-07 13:06:45:796] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 13:06:45:796] Optimize cache for minimal puts: disabled
+[2012-08-07 13:06:45:796] Structured second-level cache entries: disabled
+[2012-08-07 13:06:45:812] Echoing all SQL to stdout
+[2012-08-07 13:06:45:812] Statistics: disabled
+[2012-08-07 13:06:45:812] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 13:06:45:812] Default entity-mode: pojo
+[2012-08-07 13:06:45:812] Named query checking : enabled
+[2012-08-07 13:06:45:921] building session factory
+[2012-08-07 13:06:46:703] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 13:06:48:265] Root WebApplicationContext: initialization completed in 7625 ms
+[2012-08-07 13:06:48:625] Parsing configuration file [struts-default.xml]
+[2012-08-07 13:06:48:906] Parsing configuration file [struts-plugin.xml]
+[2012-08-07 13:06:48:968] Parsing configuration file [struts.xml]
+[2012-08-07 13:06:48:968] Loading global messages from ApplicationResources
+[2012-08-07 13:06:49:171] Initializing Struts-Spring integration...
+[2012-08-07 13:06:49:171] Setting autowire strategy to name
+[2012-08-07 13:06:49:171] ... initialized Struts-Spring integration successfully
+[2012-08-07 13:35:05:640] Closing org.springframework.web.context.support.XmlWebApplicationContext@1e3888a: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:06:40 CST 2012]; root of context hierarchy
+[2012-08-07 13:35:05:640] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1714f4a: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:35:05:703] Closing Hibernate SessionFactory
+[2012-08-07 13:35:05:703] closing
+[2012-08-07 13:35:05:703] cleaning up connection pool: jdbc:oracle:thin:@192.168.32.181:1521:test3
+[2012-08-07 13:35:39:234] Root WebApplicationContext: initialization started
+[2012-08-07 13:35:39:343] Refreshing org.springframework.web.context.support.XmlWebApplicationContext@3357c4: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:35:39 CST 2012]; root of context hierarchy
+[2012-08-07 13:35:39:531] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/applicationContext.xml]
+[2012-08-07 13:35:41:343] Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@3357c4]: org.springframework.beans.factory.support.DefaultListableBeanFactory@43614d
+[2012-08-07 13:35:42:078] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@43614d: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:35:42:375] Hibernate Annotations 3.3.0.GA
+[2012-08-07 13:35:42:421] Hibernate 3.2.5
+[2012-08-07 13:35:42:421] hibernate.properties not found
+[2012-08-07 13:35:42:421] Bytecode provider name : cglib
+[2012-08-07 13:35:42:437] using JDK 1.4 java.sql.Timestamp handling
+[2012-08-07 13:35:42:625] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 13:35:42:937] Configured SessionFactory: null
+[2012-08-07 13:35:43:046] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 13:35:43:203] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 13:35:43:328] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 13:35:43:328] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 13:35:43:343] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 13:35:43:343] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 13:35:43:343] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 13:35:43:343] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 13:35:43:343] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 13:35:43:343] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 13:35:43:375] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 13:35:43:375] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 13:35:43:390] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 13:35:43:390] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 13:35:43:390] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 13:35:43:390] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 13:35:43:421] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 13:35:43:421] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 13:35:43:500] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 13:35:43:500] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 13:35:43:500] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 13:35:43:500] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 13:35:43:515] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 13:35:43:515] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 13:35:43:531] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 13:35:43:531] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 13:35:43:531] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 13:35:43:531] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 13:35:43:531] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 13:35:43:546] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 13:35:43:546] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 13:35:43:546] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 13:35:43:546] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 13:35:43:546] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 13:35:43:546] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 13:35:43:546] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 13:35:43:546] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 13:35:43:906] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 13:35:43:906] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 13:35:43:921] Hibernate Validator 3.0.0.GA
+[2012-08-07 13:35:44:000] Building new Hibernate SessionFactory
+[2012-08-07 13:35:44:156] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 13:35:44:156] Hibernate connection pool size: 20
+[2012-08-07 13:35:44:156] autocommit mode: true
+[2012-08-07 13:35:44:156] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.32.181:1521:test3
+[2012-08-07 13:35:44:156] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 13:35:44:656] RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+[2012-08-07 13:35:44:656] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 13:35:44:781] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 13:35:44:781] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 13:35:44:796] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 13:35:44:796] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 13:35:44:796] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 13:35:44:796] Automatic session close at end of transaction: disabled
+[2012-08-07 13:35:44:796] JDBC batch size: 15
+[2012-08-07 13:35:44:796] JDBC batch updates for versioned data: disabled
+[2012-08-07 13:35:44:796] Scrollable result sets: enabled
+[2012-08-07 13:35:44:796] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 13:35:44:796] Connection release mode: auto
+[2012-08-07 13:35:44:796] Default batch fetch size: 1
+[2012-08-07 13:35:44:796] Generate SQL with comments: disabled
+[2012-08-07 13:35:44:796] Order SQL updates by primary key: disabled
+[2012-08-07 13:35:44:796] Order SQL inserts for batching: disabled
+[2012-08-07 13:35:44:796] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 13:35:44:812] Using ASTQueryTranslatorFactory
+[2012-08-07 13:35:44:812] Query language substitutions: {}
+[2012-08-07 13:35:44:812] JPA-QL strict compliance: disabled
+[2012-08-07 13:35:44:812] Second-level cache: enabled
+[2012-08-07 13:35:44:812] Query cache: disabled
+[2012-08-07 13:35:44:812] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 13:35:44:812] Optimize cache for minimal puts: disabled
+[2012-08-07 13:35:44:812] Structured second-level cache entries: disabled
+[2012-08-07 13:35:44:828] Echoing all SQL to stdout
+[2012-08-07 13:35:44:828] Statistics: disabled
+[2012-08-07 13:35:44:828] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 13:35:44:828] Default entity-mode: pojo
+[2012-08-07 13:35:44:828] Named query checking : enabled
+[2012-08-07 13:35:44:984] building session factory
+[2012-08-07 13:35:46:328] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 13:35:47:906] Root WebApplicationContext: initialization completed in 8672 ms
+[2012-08-07 13:35:48:187] Parsing configuration file [struts-default.xml]
+[2012-08-07 13:35:48:500] Parsing configuration file [struts-plugin.xml]
+[2012-08-07 13:35:48:562] Parsing configuration file [struts.xml]
+[2012-08-07 13:35:48:578] Loading global messages from ApplicationResources
+[2012-08-07 13:35:48:750] Initializing Struts-Spring integration...
+[2012-08-07 13:35:48:750] Setting autowire strategy to name
+[2012-08-07 13:35:48:750] ... initialized Struts-Spring integration successfully
+[2012-08-07 13:44:06:109] Closing org.springframework.web.context.support.XmlWebApplicationContext@3357c4: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:35:39 CST 2012]; root of context hierarchy
+[2012-08-07 13:44:06:109] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@43614d: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:44:06:140] Closing Hibernate SessionFactory
+[2012-08-07 13:44:06:140] closing
+[2012-08-07 13:44:06:140] cleaning up connection pool: jdbc:oracle:thin:@192.168.32.181:1521:test3
+[2012-08-07 13:44:20:765] Root WebApplicationContext: initialization started
+[2012-08-07 13:44:20:859] Refreshing org.springframework.web.context.support.XmlWebApplicationContext@12dbb9b: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:44:20 CST 2012]; root of context hierarchy
+[2012-08-07 13:44:21:031] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/applicationContext.xml]
+[2012-08-07 13:44:22:734] Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@12dbb9b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@163dd0b
+[2012-08-07 13:44:23:421] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@163dd0b: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:44:23:718] Hibernate Annotations 3.3.0.GA
+[2012-08-07 13:44:23:750] Hibernate 3.2.5
+[2012-08-07 13:44:23:750] hibernate.properties not found
+[2012-08-07 13:44:23:750] Bytecode provider name : cglib
+[2012-08-07 13:44:23:781] using JDK 1.4 java.sql.Timestamp handling
+[2012-08-07 13:44:23:953] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 13:44:24:250] Configured SessionFactory: null
+[2012-08-07 13:44:24:359] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 13:44:24:468] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 13:44:24:625] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 13:44:24:625] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 13:44:24:625] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 13:44:24:625] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 13:44:24:625] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 13:44:24:625] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 13:44:24:625] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 13:44:24:625] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 13:44:24:656] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 13:44:24:656] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 13:44:24:671] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 13:44:24:671] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 13:44:24:671] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 13:44:24:671] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 13:44:24:703] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 13:44:24:703] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 13:44:24:781] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 13:44:24:781] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 13:44:24:781] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 13:44:24:781] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 13:44:24:781] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 13:44:24:781] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 13:44:24:781] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 13:44:24:828] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 13:44:24:828] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 13:44:24:828] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 13:44:24:828] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 13:44:24:828] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 13:44:24:828] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 13:44:24:843] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 13:44:24:843] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 13:44:24:843] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 13:44:24:843] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 13:44:24:843] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 13:44:24:843] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 13:44:24:859] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 13:44:24:859] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 13:44:24:859] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 13:44:24:859] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 13:44:24:859] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 13:44:24:859] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 13:44:25:203] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 13:44:25:218] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 13:44:25:234] Hibernate Validator 3.0.0.GA
+[2012-08-07 13:44:25:296] Building new Hibernate SessionFactory
+[2012-08-07 13:44:25:453] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 13:44:25:453] Hibernate connection pool size: 20
+[2012-08-07 13:44:25:453] autocommit mode: true
+[2012-08-07 13:44:25:468] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 13:44:25:468] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 13:44:25:953] RDBMS: Oracle, version: Oracle Database 10g Release 10.2.0.1.0 - Production
+[2012-08-07 13:44:25:953] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 13:44:26:000] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 13:44:26:000] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 13:44:26:015] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 13:44:26:015] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 13:44:26:015] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 13:44:26:015] Automatic session close at end of transaction: disabled
+[2012-08-07 13:44:26:015] JDBC batch size: 15
+[2012-08-07 13:44:26:015] JDBC batch updates for versioned data: disabled
+[2012-08-07 13:44:26:015] Scrollable result sets: enabled
+[2012-08-07 13:44:26:015] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 13:44:26:015] Connection release mode: auto
+[2012-08-07 13:44:26:015] Default batch fetch size: 1
+[2012-08-07 13:44:26:015] Generate SQL with comments: disabled
+[2012-08-07 13:44:26:015] Order SQL updates by primary key: disabled
+[2012-08-07 13:44:26:015] Order SQL inserts for batching: disabled
+[2012-08-07 13:44:26:015] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 13:44:26:031] Using ASTQueryTranslatorFactory
+[2012-08-07 13:44:26:031] Query language substitutions: {}
+[2012-08-07 13:44:26:031] JPA-QL strict compliance: disabled
+[2012-08-07 13:44:26:031] Second-level cache: enabled
+[2012-08-07 13:44:26:031] Query cache: disabled
+[2012-08-07 13:44:26:031] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 13:44:26:031] Optimize cache for minimal puts: disabled
+[2012-08-07 13:44:26:031] Structured second-level cache entries: disabled
+[2012-08-07 13:44:26:046] Echoing all SQL to stdout
+[2012-08-07 13:44:26:046] Statistics: disabled
+[2012-08-07 13:44:26:046] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 13:44:26:046] Default entity-mode: pojo
+[2012-08-07 13:44:26:046] Named query checking : enabled
+[2012-08-07 13:44:26:140] building session factory
+[2012-08-07 13:44:26:921] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 13:44:28:421] Root WebApplicationContext: initialization completed in 7656 ms
+[2012-08-07 13:44:28:687] Parsing configuration file [struts-default.xml]
+[2012-08-07 13:44:28:968] Parsing configuration file [struts-plugin.xml]
+[2012-08-07 13:44:29:031] Parsing configuration file [struts.xml]
+[2012-08-07 13:44:29:046] Loading global messages from ApplicationResources
+[2012-08-07 13:44:29:218] Initializing Struts-Spring integration...
+[2012-08-07 13:44:29:218] Setting autowire strategy to name
+[2012-08-07 13:44:29:218] ... initialized Struts-Spring integration successfully
+[2012-08-07 13:46:02:250] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@808fa9: display name [org.springframework.context.support.ClassPathXmlApplicationContext@808fa9]; startup date [Tue Aug 07 13:46:02 CST 2012]; root of context hierarchy
+[2012-08-07 13:46:02:250] Loading XML bean definitions from class path resource [applicationContext.xml]
+[2012-08-07 13:46:02:375] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@808fa9]: org.springframework.beans.factory.support.DefaultListableBeanFactory@f2740c
+[2012-08-07 13:46:02:375] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f2740c: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 13:46:02:390] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 13:46:02:390] Configured SessionFactory: null
+[2012-08-07 13:46:02:390] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 13:46:02:390] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 13:46:02:390] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 13:46:02:390] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 13:46:02:390] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 13:46:02:390] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 13:46:02:390] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 13:46:02:390] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 13:46:02:406] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 13:46:02:406] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 13:46:02:406] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 13:46:02:406] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 13:46:02:406] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 13:46:02:406] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 13:46:02:421] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 13:46:02:421] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 13:46:02:437] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 13:46:02:437] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 13:46:02:437] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 13:46:02:437] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 13:46:02:515] Building new Hibernate SessionFactory
+[2012-08-07 13:46:02:578] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 13:46:02:578] Hibernate connection pool size: 20
+[2012-08-07 13:46:02:593] autocommit mode: true
+[2012-08-07 13:46:02:593] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 13:46:02:593] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 13:46:02:625] RDBMS: Oracle, version: Oracle Database 10g Release 10.2.0.1.0 - Production
+[2012-08-07 13:46:02:625] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 13:46:02:625] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 13:46:02:625] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 13:46:02:625] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 13:46:02:625] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 13:46:02:625] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 13:46:02:625] Automatic session close at end of transaction: disabled
+[2012-08-07 13:46:02:625] JDBC batch size: 15
+[2012-08-07 13:46:02:625] JDBC batch updates for versioned data: disabled
+[2012-08-07 13:46:02:625] Scrollable result sets: enabled
+[2012-08-07 13:46:02:625] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 13:46:02:625] Connection release mode: auto
+[2012-08-07 13:46:02:625] Default batch fetch size: 1
+[2012-08-07 13:46:02:625] Generate SQL with comments: disabled
+[2012-08-07 13:46:02:625] Order SQL updates by primary key: disabled
+[2012-08-07 13:46:02:625] Order SQL inserts for batching: disabled
+[2012-08-07 13:46:02:625] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 13:46:02:625] Using ASTQueryTranslatorFactory
+[2012-08-07 13:46:02:625] Query language substitutions: {}
+[2012-08-07 13:46:02:625] JPA-QL strict compliance: disabled
+[2012-08-07 13:46:02:625] Second-level cache: enabled
+[2012-08-07 13:46:02:625] Query cache: disabled
+[2012-08-07 13:46:02:625] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 13:46:02:625] Optimize cache for minimal puts: disabled
+[2012-08-07 13:46:02:625] Structured second-level cache entries: disabled
+[2012-08-07 13:46:02:625] Echoing all SQL to stdout
+[2012-08-07 13:46:02:625] Statistics: disabled
+[2012-08-07 13:46:02:625] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 13:46:02:625] Default entity-mode: pojo
+[2012-08-07 13:46:02:625] Named query checking : enabled
+[2012-08-07 13:46:02:703] building session factory
+[2012-08-07 13:46:02:796] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 13:46:04:218] Logging using commons-logging.
+[2012-08-07 13:46:04:390] Missing classdef for creator 'script'. Failed to load uk.ltd.getahead.dwr.create.ScriptedCreator. Cause: org/apache/bsf/BSFManager
+[2012-08-07 13:46:04:421] Found Hibernate3 class: org.hibernate.Hibernate
+[2012-08-07 13:46:07:859] Executing: public static java.lang.String com.selfpackage.util.Encrypt.Cipher(java.lang.String)
+[2012-08-07 13:46:14:890] Executing: public static java.lang.String com.selfpackage.util.Encrypt.Cipher(java.lang.String)
+[2012-08-07 14:18:23:531] Closing org.springframework.web.context.support.XmlWebApplicationContext@12dbb9b: display name [Root WebApplicationContext]; startup date [Tue Aug 07 13:44:20 CST 2012]; root of context hierarchy
+[2012-08-07 14:18:23:531] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@163dd0b: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 14:18:23:562] Closing Hibernate SessionFactory
+[2012-08-07 14:18:23:562] closing
+[2012-08-07 14:18:23:562] cleaning up connection pool: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 14:20:12:828] Root WebApplicationContext: initialization started
+[2012-08-07 14:20:12:921] Refreshing org.springframework.web.context.support.XmlWebApplicationContext@4066db: display name [Root WebApplicationContext]; startup date [Tue Aug 07 14:20:12 CST 2012]; root of context hierarchy
+[2012-08-07 14:20:13:078] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/applicationContext.xml]
+[2012-08-07 14:20:14:750] Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@4066db]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b9ee2c
+[2012-08-07 14:20:15:437] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b9ee2c: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 14:20:15:734] Hibernate Annotations 3.3.0.GA
+[2012-08-07 14:20:15:750] Hibernate 3.2.5
+[2012-08-07 14:20:15:765] hibernate.properties not found
+[2012-08-07 14:20:15:765] Bytecode provider name : cglib
+[2012-08-07 14:20:15:765] using JDK 1.4 java.sql.Timestamp handling
+[2012-08-07 14:20:15:968] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 14:20:16:265] Configured SessionFactory: null
+[2012-08-07 14:20:16:359] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 14:20:16:468] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 14:20:16:609] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 14:20:16:609] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 14:20:16:609] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 14:20:16:609] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 14:20:16:609] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 14:20:16:609] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 14:20:16:625] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 14:20:16:625] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 14:20:16:640] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 14:20:16:640] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 14:20:16:656] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 14:20:16:656] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 14:20:16:656] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 14:20:16:656] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 14:20:16:671] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 14:20:16:671] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 14:20:16:734] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 14:20:16:734] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 14:20:16:734] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 14:20:16:734] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 14:20:16:734] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 14:20:16:734] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 14:20:16:750] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 14:20:16:750] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 14:20:16:765] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 14:20:16:765] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 14:20:17:093] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 14:20:17:093] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 14:20:17:140] Hibernate Validator 3.0.0.GA
+[2012-08-07 14:20:17:203] Building new Hibernate SessionFactory
+[2012-08-07 14:20:17:343] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 14:20:17:343] Hibernate connection pool size: 20
+[2012-08-07 14:20:17:343] autocommit mode: true
+[2012-08-07 14:20:17:343] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 14:20:17:343] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 14:20:17:843] RDBMS: Oracle, version: Oracle Database 10g Release 10.2.0.1.0 - Production
+[2012-08-07 14:20:17:843] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 14:20:17:890] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 14:20:17:890] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 14:20:17:890] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 14:20:17:906] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 14:20:17:906] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 14:20:17:906] Automatic session close at end of transaction: disabled
+[2012-08-07 14:20:17:906] JDBC batch size: 15
+[2012-08-07 14:20:17:906] JDBC batch updates for versioned data: disabled
+[2012-08-07 14:20:17:906] Scrollable result sets: enabled
+[2012-08-07 14:20:17:906] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 14:20:17:906] Connection release mode: auto
+[2012-08-07 14:20:17:906] Default batch fetch size: 1
+[2012-08-07 14:20:17:906] Generate SQL with comments: disabled
+[2012-08-07 14:20:17:906] Order SQL updates by primary key: disabled
+[2012-08-07 14:20:17:906] Order SQL inserts for batching: disabled
+[2012-08-07 14:20:17:906] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 14:20:17:921] Using ASTQueryTranslatorFactory
+[2012-08-07 14:20:17:921] Query language substitutions: {}
+[2012-08-07 14:20:17:921] JPA-QL strict compliance: disabled
+[2012-08-07 14:20:17:921] Second-level cache: enabled
+[2012-08-07 14:20:17:921] Query cache: disabled
+[2012-08-07 14:20:17:921] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 14:20:17:921] Optimize cache for minimal puts: disabled
+[2012-08-07 14:20:17:921] Structured second-level cache entries: disabled
+[2012-08-07 14:20:17:937] Echoing all SQL to stdout
+[2012-08-07 14:20:17:937] Statistics: disabled
+[2012-08-07 14:20:17:937] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 14:20:17:937] Default entity-mode: pojo
+[2012-08-07 14:20:17:937] Named query checking : enabled
+[2012-08-07 14:20:18:015] building session factory
+[2012-08-07 14:20:18:796] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 14:20:20:218] Root WebApplicationContext: initialization completed in 7390 ms
+[2012-08-07 14:20:20:468] Parsing configuration file [struts-default.xml]
+[2012-08-07 14:20:20:781] Parsing configuration file [struts-plugin.xml]
+[2012-08-07 14:20:20:843] Parsing configuration file [struts.xml]
+[2012-08-07 14:20:20:859] Loading global messages from ApplicationResources
+[2012-08-07 14:20:21:046] Initializing Struts-Spring integration...
+[2012-08-07 14:20:21:046] Setting autowire strategy to name
+[2012-08-07 14:20:21:046] ... initialized Struts-Spring integration successfully
+[2012-08-07 14:25:59:281] Closing org.springframework.web.context.support.XmlWebApplicationContext@4066db: display name [Root WebApplicationContext]; startup date [Tue Aug 07 14:20:12 CST 2012]; root of context hierarchy
+[2012-08-07 14:25:59:281] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b9ee2c: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 14:25:59:312] Closing Hibernate SessionFactory
+[2012-08-07 14:25:59:312] closing
+[2012-08-07 14:25:59:312] cleaning up connection pool: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 14:26:22:234] Root WebApplicationContext: initialization started
+[2012-08-07 14:26:22:328] Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1dcc1e2: display name [Root WebApplicationContext]; startup date [Tue Aug 07 14:26:22 CST 2012]; root of context hierarchy
+[2012-08-07 14:26:22:484] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/applicationContext.xml]
+[2012-08-07 14:26:24:187] Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1dcc1e2]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b068f5
+[2012-08-07 14:26:24:890] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b068f5: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 14:26:25:171] Hibernate Annotations 3.3.0.GA
+[2012-08-07 14:26:25:203] Hibernate 3.2.5
+[2012-08-07 14:26:25:234] hibernate.properties not found
+[2012-08-07 14:26:25:234] Bytecode provider name : cglib
+[2012-08-07 14:26:25:234] using JDK 1.4 java.sql.Timestamp handling
+[2012-08-07 14:26:25:453] configuring from url: file:/D:/Program%20Files/apache-tomcat-6.0.20/webapps/Self/WEB-INF/classes/hibernate.cfg.xml
+[2012-08-07 14:26:25:750] Configured SessionFactory: null
+[2012-08-07 14:26:25:859] Binding entity from annotated class: com.selfpackage.model.User
+[2012-08-07 14:26:25:968] Bind entity com.selfpackage.model.User on table TBLREGISTERUSERS
+[2012-08-07 14:26:26:125] Binding entity from annotated class: com.selfpackage.model.Notice
+[2012-08-07 14:26:26:125] Bind entity com.selfpackage.model.Notice on table TBLPUBLICMESSAGE
+[2012-08-07 14:26:26:125] Binding entity from annotated class: com.selfpackage.model.UserPay
+[2012-08-07 14:26:26:125] Bind entity com.selfpackage.model.UserPay on table TBLUSERPAY
+[2012-08-07 14:26:26:125] Binding entity from annotated class: com.selfpackage.model.MonthPay
+[2012-08-07 14:26:26:125] Bind entity com.selfpackage.model.MonthPay on table TBLMONTHPAYHISTORY
+[2012-08-07 14:26:26:125] Binding entity from annotated class: com.selfpackage.model.UserGroup
+[2012-08-07 14:26:26:125] Bind entity com.selfpackage.model.UserGroup on table TBLUSERGROUP
+[2012-08-07 14:26:26:140] Binding entity from annotated class: com.selfpackage.model.AdminOpLog
+[2012-08-07 14:26:26:140] Bind entity com.selfpackage.model.AdminOpLog on table TBLADMINOPERATORLOG
+[2012-08-07 14:26:26:140] Binding entity from annotated class: com.selfpackage.model.UserLoginLog
+[2012-08-07 14:26:26:140] Bind entity com.selfpackage.model.UserLoginLog on table TBLUSERLOGINHISTORY
+[2012-08-07 14:26:26:156] Binding entity from annotated class: com.selfpackage.model.Message
+[2012-08-07 14:26:26:156] Bind entity com.selfpackage.model.Message on table TBL_LW
+[2012-08-07 14:26:26:171] Binding entity from annotated class: com.selfpackage.model.MessageStatus
+[2012-08-07 14:26:26:171] Bind entity com.selfpackage.model.MessageStatus on table TBL_LW_STATUS
+[2012-08-07 14:26:26:234] Binding entity from annotated class: com.selfpackage.model.MessageType
+[2012-08-07 14:26:26:234] Bind entity com.selfpackage.model.MessageType on table TBL_LW_TYPE
+[2012-08-07 14:26:26:234] Binding entity from annotated class: com.selfpackage.model.Tblunregisterusers
+[2012-08-07 14:26:26:234] Bind entity com.selfpackage.model.Tblunregisterusers on table TBLUNREGISTERUSERS
+[2012-08-07 14:26:26:234] Binding entity from annotated class: com.selfpackage.model.TblUserComplain
+[2012-08-07 14:26:26:234] Bind entity com.selfpackage.model.TblUserComplain on table TBLUSERCOMPLAIN
+[2012-08-07 14:26:26:234] Binding entity from annotated class: com.selfpackage.model.Tblcomplaindescribe
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblcomplaindescribe on table TBLCOMPLAINDESCRIBE
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblservicedefault
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblservicedefault on table TBLSERVICEDEFAULT
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.TblOnlineUsers
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.TblOnlineUsers on table TBLONLINEUSERS
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.TblpreselectgroupZgnd
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.TblpreselectgroupZgnd on table TBLPRESELECTGROUP_ZGND
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.TblmessageBs
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.TblmessageBs on table TBLMESSAGE_BS
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.TblnoticeBs
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.TblnoticeBs on table TBLNOTICE_BS
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblprereopenlog
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblprereopenlog on table TBLPREREOPENLOG
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.TblPresSopLog
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.TblPresSopLog on table TBLPRESTOPLOG
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblregisteconfig
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblregisteconfig on table TBLREGISTEREXTRA
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblselfopenfunction
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblselfopenfunction on table TBLSELFOPENFUNCTION
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblpasswordquestion
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblpasswordquestion on table TBLPASSWORDQUESTION
+[2012-08-07 14:26:26:265] Binding entity from annotated class: com.selfpackage.model.Tblpasswordanwser
+[2012-08-07 14:26:26:265] Bind entity com.selfpackage.model.Tblpasswordanwser on table TBLREGISTEREXTRA
+[2012-08-07 14:26:26:609] Mapping collection: com.selfpackage.model.MessageStatus.tblLws -> TBL_LW
+[2012-08-07 14:26:26:609] Mapping collection: com.selfpackage.model.MessageType.tblLws -> TBL_LW
+[2012-08-07 14:26:26:625] Hibernate Validator 3.0.0.GA
+[2012-08-07 14:26:26:687] Building new Hibernate SessionFactory
+[2012-08-07 14:26:26:828] Using Hibernate built-in connection pool (not for production use!)
+[2012-08-07 14:26:26:828] Hibernate connection pool size: 20
+[2012-08-07 14:26:26:828] autocommit mode: true
+[2012-08-07 14:26:26:843] using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@192.168.12.55:1521:drcom
+[2012-08-07 14:26:26:843] connection properties: {user=drcom, password=****, autocommit=true}
+[2012-08-07 14:26:27:328] RDBMS: Oracle, version: Oracle Database 10g Release 10.2.0.1.0 - Production
+[2012-08-07 14:26:27:328] JDBC driver: Oracle JDBC driver, version: 9.2.0.1.0
+[2012-08-07 14:26:27:390] Using dialect: org.hibernate.dialect.Oracle9Dialect
+[2012-08-07 14:26:27:390] The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2012-08-07 14:26:27:406] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[2012-08-07 14:26:27:406] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[2012-08-07 14:26:27:406] Automatic flush during beforeCompletion(): disabled
+[2012-08-07 14:26:27:406] Automatic session close at end of transaction: disabled
+[2012-08-07 14:26:27:406] JDBC batch size: 15
+[2012-08-07 14:26:27:406] JDBC batch updates for versioned data: disabled
+[2012-08-07 14:26:27:406] Scrollable result sets: enabled
+[2012-08-07 14:26:27:406] JDBC3 getGeneratedKeys(): disabled
+[2012-08-07 14:26:27:406] Connection release mode: auto
+[2012-08-07 14:26:27:421] Default batch fetch size: 1
+[2012-08-07 14:26:27:421] Generate SQL with comments: disabled
+[2012-08-07 14:26:27:421] Order SQL updates by primary key: disabled
+[2012-08-07 14:26:27:421] Order SQL inserts for batching: disabled
+[2012-08-07 14:26:27:421] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[2012-08-07 14:26:27:421] Using ASTQueryTranslatorFactory
+[2012-08-07 14:26:27:421] Query language substitutions: {}
+[2012-08-07 14:26:27:421] JPA-QL strict compliance: disabled
+[2012-08-07 14:26:27:421] Second-level cache: enabled
+[2012-08-07 14:26:27:421] Query cache: disabled
+[2012-08-07 14:26:27:421] Cache provider: org.hibernate.cache.NoCacheProvider
+[2012-08-07 14:26:27:421] Optimize cache for minimal puts: disabled
+[2012-08-07 14:26:27:421] Structured second-level cache entries: disabled
+[2012-08-07 14:26:27:437] Echoing all SQL to stdout
+[2012-08-07 14:26:27:437] Statistics: disabled
+[2012-08-07 14:26:27:437] Deleted entity synthetic identifier rollback: disabled
+[2012-08-07 14:26:27:437] Default entity-mode: pojo
+[2012-08-07 14:26:27:437] Named query checking : enabled
+[2012-08-07 14:26:27:546] building session factory
+[2012-08-07 14:26:28:312] Not binding factory to JNDI, no JNDI name configured
+[2012-08-07 14:26:29:750] Root WebApplicationContext: initialization completed in 7516 ms
+[2012-08-07 14:26:30:015] Parsing configuration file [struts-default.xml]
+[2012-08-07 14:26:30:296] Parsing configuration file [struts-plugin.xml]
+[2012-08-07 14:26:30:359] Parsing configuration file [struts.xml]
+[2012-08-07 14:26:30:359] Loading global messages from ApplicationResources
+[2012-08-07 14:26:30:546] Initializing Struts-Spring integration...
+[2012-08-07 14:26:30:546] Setting autowire strategy to name
+[2012-08-07 14:26:30:546] ... initialized Struts-Spring integration successfully
+[2012-08-07 15:12:35:859] Closing org.springframework.web.context.support.XmlWebApplicationContext@1dcc1e2: display name [Root WebApplicationContext]; startup date [Tue Aug 07 14:26:22 CST 2012]; root of context hierarchy
+[2012-08-07 15:12:35:875] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b068f5: defining beans [sessionFactory,transactionManager,txAdvice,OpenFunctionDao,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,adminOpLogAction,changeGroupAction,findPasswordAction,jsonAction,loginAction,messageAction,messageTypeAction,monthPayAction,navigateAction,noticeAction,passQuesAction,preLogAction,randomCodeAction,skinAction,unRegisteruserAction,userAction,userComplainAction,userGroupAction,userLoginLogAction,userPayAction,webAd,adminOpLogDao,areaDao,createStaticPageDao,FindPasswordDao,messageDao,messageTypeDao,monthPayDao,noticeDao,onlineUserDao,passQuesDao,preLogDao,tblcomplaindescribeDao,tblUserComplainDao,unRegisteruserDao,userDao,userGroupDao,userLoginLogDao,userPayDao,adminOpLogService,areaService,createStaticPageService,FindPasswordService,messageService,messageTypeService,monthPayService,noticeService,onlineUserService,passQuesService,preLogService,tblcomplaindescribeService,tblUserComplainService,unRuserService,userGruopService,userLoginLogService,userPayService,userService]; root of factory hierarchy
+[2012-08-07 15:12:35:921] Closing Hibernate SessionFactory
+[2012-08-07 15:12:35:921] closing
+[2012-08-07 15:12:35:921] cleaning up connection pool: jdbc:oracle:thin:@192.168.12.55:1521:drcom
